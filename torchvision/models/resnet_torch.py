@@ -127,7 +127,7 @@ class Bottleneck(nn.Module):
         out = self.conv1(x) # conv
         out = self.bn1(out) # batch norm
         out = self.relu(out)# ReLU
-
+        
         out = self.conv2(out)
         out = self.bn2(out)
         out = self.relu(out)
