@@ -53,7 +53,7 @@ class My_own_dataset():
         print(self.images[index])
         img.show()
         img_transform = transforms.Compose( [transforms.PILToTensor(), transforms.Resize((224,224))] )
-        # img = torch.devide( img_transform(img), 255 )
+        img = torch.divide( img_transform(img), 255 )
         
         # if self.transform is not None:
         #     img = self.transform(img)
